@@ -4,6 +4,12 @@
 
 Frontend application responsible for consuming a REST API that provides normalized data from the RALIE dataset of ANEEL, displaying the 5 largest energy producers in Brazil in a user-friendly interface.
 
+## Access the Backend
+
+You can access the source code of the project's backend on GitHub by clicking [here](https://github.com/Vitorialuz229/desafio_bolt_geradores_backend).
+
+Explore the repository to see how the backend was developed using Spring Boot, PostgreSQL, and kotlin!
+
 ## Image Project
 ![Image](src/app/assets/image.png)
 
