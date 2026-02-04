@@ -8,7 +8,7 @@ Aplicação frontend responsável por consumir uma API REST que fornece dados no
 
 Você pode acessar o código-fonte do backend do projeto no GitHub clicando [aqui](https://github.com/Vitorialuz229/desafio_bolt_geradores).
 
-Explore o repositório para ver como o backend foi desenvolvido utilizando Spring Boot, Kafka, PostgreSQL e Docker!
+Explore o repositório para ver como o backend foi desenvolvido utilizando Spring Boot, PostgreSQL e Kotlin!
 
 ## Imagem do Projeto
 ![Image](src/app/assets/image.png)
