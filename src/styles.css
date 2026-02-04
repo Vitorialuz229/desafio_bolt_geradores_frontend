@@ -1,4 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* Base Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Certifique-se de que o body ocupe toda a altura da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main container for content */
+main {
+  flex: 1; /* Isso faz com que o conteúdo ocupe o máximo de espaço possível */
+}
+
+/* Footer fica no final */
+footer {
+  margin-top: auto; /* Empurra o footer para o final da página */
+}

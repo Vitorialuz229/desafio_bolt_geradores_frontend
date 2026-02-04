@@ -1,0 +1,34 @@
+<div class="container mx-auto p-6">
+    <ng-container *ngIf="produtores.length > 0; then showTable; else noData"></ng-container>
+
+    <ng-template #showTable>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white shadow rounded-lg overflow-hidden">
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="text-left py-2 px-4">Código</th>
+                        <th class="text-left py-2 px-4">Nome da Usina</th>
+                        <th class="text-center py-2 px-4">Estado</th>
+                        <th class="text-center py-2 px-4">Tipo de Geração</th>
+                        <th class="text-center py-2 px-4">Potência (kW)</th>
+                        <th class="text-center py-2 px-4">Data de Publicação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let produtor of produtores" class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">{{ produtor.codigoUsina }}</td>
+                        <td class="py-2 px-4">{{ produtor.nomeUsina }}</td>
+                        <td class="py-2 px-4 text-center">{{ produtor.uf }}</td>
+                        <td class="py-2 px-4 text-center">{{ produtor.tipoGeracao }}</td>
+                        <td class="py-2 px-4 text-center">{{ produtor.potenciaOutorgada | number:'1.0-0' }}</td>
+                        <td class="py-2 px-4 text-center">{{ produtor.dataPublicacao | date:'dd/MM/yyyy' }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ng-template>
+
+    <ng-template #noData>
+        <p class="text-gray-600 text-center">Não há produtores para exibir no momento.</p>
+    </ng-template>
+</div>

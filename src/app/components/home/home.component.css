@@ -1,0 +1,20 @@
+/* Garantir que o body ocupe toda a altura da tela */
+html, body {
+  height: 100%; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* O main deve ocupar o espaço restante */
+main {
+  flex: 1;
+  gap: 20px; /* Espaçamento entre os itens dentro do main */
+  flex-direction: column;
+  display: flex;
+}
+
+/* Footer vai para o final da página */
+footer {
+  margin-top: auto; /* Isso vai empurrar o footer para o final da página */
+}
