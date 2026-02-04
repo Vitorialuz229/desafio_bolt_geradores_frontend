@@ -5,7 +5,19 @@
   "projects": {
     "desafio_bolt_geradores_frontend": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "css",  
+          "skipTests": true,  
+          "prefix": "app"
+        },
+        "@schematics/angular:service": {
+          "skipTests": true 
+        },
+        "@schematics/angular:module": {
+          "routing": true  
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
